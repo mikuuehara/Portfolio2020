@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" charset="utf-8">
+<html>
+
+<head>
+    <title>髪型美人の天気予報</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                    kitId: 'tpu6uie',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="css/weatherweb.css">
+    <!--
+    <script type="text/javascript" src="../js/top.js"></script>
+    -->
+</head>
+
+<body>
+    <header>
+        <a class="home" href="index.html">HOME</a>
+        <h1>髪型美人の天気予報</h1>
+    </header>
+
+    <!--
+    <a href="https://mikuuehara.gitlab.io/social-distance-simulator/">サイトはこちら</a>
+    -->
+
+    <img src="img/WeathreWeb/0.png" alt="髪型美人の天気予報サイトの画像">
+
+    <div class="block1">
+
+
+        <div class="about">
+            <div class="tag_content">
+                WEBサイト
+            </div>
+            <div class="tag_content">
+                実装
+            </div>
+            <div class="tag_content">
+                制作期間：2週間
+            </div>
+            <div class="tag_content">
+                個人製作
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="tag">
+        <div class="icon">
+            <img src="img/icon/html.png" alt="htmlのアイコン"/>
+        </div>
+        <div class="icon">
+            <img src="img/icon/css.png" alt="cssのアイコン"/>
+        </div>
+        <div class="icon">
+            <img src="img/icon/js.png" alt="jsのアイコン"/>
+        </div>
+    </div>
+
+
+
+    <div class="content main">
+        <h2>About</h2>
+        <p>天気・気温・湿度・風速から導き出した、<br class="min">
+            最適なヘアアレンジを提案するWEBサイトです。
+        </p>
+    </div>
+
+    <div class="content background">
+        <h2>Back Ground</h2>
+        <p>「天気予報サイトをつくる」<br class="min">
+            という課題で制作しました
+        </p>
+        <p>女性は髪型を大切にしている方が多いので<br class="min">
+            <span>どんな天気でもハッピーでいられる</span>ように<br class="min">
+            このサイトを考えました。</p>
+    </div>
+
+
+    <footer></footer>
+
+
+</body>
+
+</html>

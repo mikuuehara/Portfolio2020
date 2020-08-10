@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" charset="utf-8">
+<html>
+
+<head>
+    <title>ソーシャルディスタンスシュミレーター</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                    kitId: 'tpu6uie',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="css/socialdistance.css">
+    <!--
+    <script type="text/javascript" src="../js/top.js"></script>
+    -->
+</head>
+
+<body>
+    <header>
+        <a class="home" href="index.html">HOME</a>
+        <h1>ソーシャルディスタンスシュミレーター</h1>
+    </header>
+
+    
+
+    <a class="url" href="https://mikuuehara.gitlab.io/social-distance-simulator/" target="_blank" rel="noopener">サイトはこちら</a>
+
+    <img src="img/top/SocialDistanceSimulatar.JPG" alt="ソーシャルディスタンスシュミレーターの画像" />
+
+    <div class="block1">
+
+
+        <div class="about">
+            <div class="tag_content">
+                WEBサイト
+            </div>
+            <div class="tag_content">
+                実装
+            </div>
+            <div class="tag_content">
+                制作期間：2週間
+            </div>
+            <div class="tag_content">
+                個人製作
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="tag">
+        <div class="icon">
+            <img src="img/icon/html.png" alt="htmlのアイコン"/>
+        </div>
+        <div class="icon">
+            <img src="img/icon/css.png" alt="cssのアイコン"/>
+        </div>
+        <div class="icon">
+            <img src="img/icon/js.png" alt="jsのアイコン"/>
+        </div>
+        <div class="icon">
+            <img src="img/icon/illustrator.png" alt="イラストレーターのアイコン"/>
+        </div>
+    </div>
+
+
+
+    <div class="content main">
+        <h2>About</h2>
+        <p>ソーシャルディスタンスで推奨されている距離である<br>
+            2mを街中の様々なもので表したWEBサイトです。</p>
+    </div>
+
+    <div class="content background">
+        <h2>Back Ground</h2>
+        <p>「大学生にソーシャルディスタンスを促す」<br>
+            という大学の課題で制作しました。
+        </p>
+        <p>2mを街の中で想像するのが<br class="min">
+            意外と難しいということに気づき、<br>
+            <span>"2m"という情報を楽しく可視化できる</span><br class="min">
+            サイトを考えました。</p>
+    </div>
+
+    <div class="content ProductionFlow">
+
+        <h2>Production Flow</h2>
+        <img src="img/SocialDistanceSumilator/proflow.JPG" alt="制作の流れの画像"/>
+    </div>
+
+    <div class="content frontend">
+        <h2>Front-end Design</h2>
+        <p>説明部分に<span>アニメーション</span>を加えることで、<br class="min">
+            ユーザが先に進みたくなるデザインにしました。</p>
+        <p><span>シンプルかつ親近感のあるイラスト</span>を描きました。</p>
+        <p>PC画面からはもちろん、<br class="min">
+            画面サイズに応じてポップアップを出すことで<br>
+            スマートフォンからでも快適に閲覧ができます。</p>
+    </div>
+
+    <a class="url" href="https://mikuuehara.gitlab.io/social-distance-simulator/" target="_blank" rel="noopener">サイトはこちら</a>
+
+
+    <footer></footer>
+
+
+</body>
+
+</html>

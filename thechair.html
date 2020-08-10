@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" charset="utf-8">
+<html>
+
+<head>
+    <title>The Chair</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                    kitId: 'tpu6uie',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="css/thechair.css">
+    <!--
+    <script type="text/javascript" src="../js/top.js"></script>
+    -->
+</head>
+
+<body>
+    <header>
+
+        <a class="home" href="index.html">Home</a>
+        <h1>The Chair</h1>
+
+    </header>
+
+
+
+    <img src="img/TheChair/0.jpg" alt="The Chairの画像">
+
+    <div class="block1">
+
+        <div class="about">
+            <div class="tag_content">
+                プロダクト
+            </div>
+            <div class="tag_content">
+                制作期間：3日
+            </div>
+            <div class="tag_content">
+                個人製作
+            </div>
+        </div>
+
+        <div class="tag">
+            <div class="icon">
+                <img src="img/icon/Fusion.png" alt="Fusion360のアイコン" />
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="content main">
+        <p>洋室にぴったりな
+            温かみのある座椅子です。
+        </p>
+    </div>
+
+    <div class="content background">
+        <h2>Back Ground</h2>
+        <p>狭いお部屋だとソファを置くのは難しいですが<br class="min">
+            座椅子ならコンパクトに安らぐことができます。<br>
+            座椅子は和室のイメージが強いですが<br>
+            <span>洋室のアクセントになるような座椅子</span>があったらいいと思いデザインしました。
+        </p>
+
+        <div class="table">
+            <table>
+                <tr>
+                    <td>ターゲット</td>
+                    <td>20代～30代前半女性<br>
+                        インテリアと実用性の<br class="min">
+                        両立をもとめる</td>
+                </tr>
+                <tr>
+                    <td>シーン</td>
+                    <td>食事・テレビを見るときなど<br class="min">
+                        日常生活</td>
+                </tr>
+                <tr>
+                    <td>素材の特徴</td>
+                    <td>さらさらとした触り心地で<br class="min">
+                        1年中使用可能<br>
+                        白色の木材で優しい風合い</td>
+                </tr>
+            </table>
+        </div>
+        <img src="img/TheChair/1.png" alt="使用素材の画像" />
+        <div class="table">
+            <table>
+
+                <tr>
+                    <td>構造の特徴</td>
+                    <td>ラチェット構造により<br class="min">
+                        リクライニングが可能</td>
+                </tr>
+            </table>
+        </div>
+        <img src="img/TheChair/2.png" alt="リクライニングの画像" />
+    </div>
+
+    <div class="content colval">
+
+        <h2>Color variations</h2>
+        <img src="img/TheChair/3.png" alt="カラーバリエーションの画像">
+
+    </div>
+
+
+    <footer></footer>
+
+</body>
+
+</html>

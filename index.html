@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <title>上原未紅のポートフォリオ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                    kitId: 'tpu6uie',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/index.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="inline_header">
+                <button type="button" class="hirameki">ヒラメキ</button>
+                <span>を</span>
+
+                <button type="button" class="katachi">カタチ</button>
+                <span>に。</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="scroll">
+        <span></span>
+        Scroll
+    </div>
+
+    <div class="menue">
+        <div class="btn-trigger" id="btn01">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="navigation">
+
+        <div class="main_menue">
+            <div class="inline_main_menue">
+                <p>About Me</p>
+                <ul>
+                    <li>
+                        <a class="url" href="aboutme.html">上原未紅</a>
+                    </li>
+                </ul>
+                <p>Works</p>
+                <ul>
+                    <li>
+                        <a class="url" href="socialdistance.html">ソーシャルディスタンスシュミレーター</a>
+                    </li>
+                    <li>
+                        <a class="url" href="weatherweb.html">髪型美人の天気予報</a>
+                    </li>
+                    <li>
+                        <a class="url" href="kininaruwebgallery.html">キニナル??WEB GALLERY</a>
+                    </li>
+                    <li>
+                        <a class="url" href="dailymissions.html">Daily Missions</a>
+                    </li>
+                    <li>
+                        <a class="url" href="whatsin.html">What's in...?</a>
+                    </li>
+                    <li>
+                        <a class="url" href="thechair.html">The Chair</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mask">
+
+        </div>
+    </div>
+
+
+
+    <div class="main block1">
+
+        <div class="sm_only title1">
+            <p>
+                About Me
+            </p>
+        </div>
+
+        <div class="sm_only title2">
+            <p>
+                Works
+            </p>
+        </div>
+
+
+        <div class="work content1 web">
+            <button type="button" onclick="location.href='socialdistance.html'" class="front category front1">
+                <p class="hirameki_ex">
+                    ソーシャルディスタンスを<br>
+                    街中のもので表して<br>
+                    わかりやすく
+                </p>
+            </button>
+            <button onclick="location.href='socialdistance.html'" class="back back1">
+                <img src="img/top/SocialDistanceSimulatar.JPG" alt="ソーシャルディスタンスシュミレーターの画像" />
+            </button>
+        </div>
+
+
+
+
+        <div class="work content2 other">
+            <button class="front front1">
+                <p class="hirameki_ex">
+                    表
+                </p>
+            </button>
+            <button class="back back1">
+
+            </button>
+        </div>
+
+        <div class="work me content3">
+            <button onclick="location.href='aboutme.html'" class="front front1">
+                <img src="img/top/me.png" alt="上原未紅のイラスト"/>
+            </button>
+            <button onclick="location.href='aboutme.html'" class="back back1">
+                <img src="img/top/me.png" alt="上原未紅のイラスト" />
+            </button>
+        </div>
+
+        <div class="work content4 web">
+            <button onclick="location.href='socialdistance.html'" class="front category front1">
+                <p class="hirameki_ex">
+                    その人のこだわりが詰まった<br>
+                    色々な ”なかみ” っておもしろい
+                </p>
+            </button>
+            <button onclick="location.href='socialdistance.html'" class="back back1">
+                現在制作中
+            </button>
+        </div>
+
+        <div class="work content5 app">
+            <button onclick="location.href='weatherweb.html'" class="front category front1">
+                <p class="hirameki_ex">
+                    天気を味方につけて<br>
+                    一日中髪型美人でいたい
+                </p>
+            </button>
+            <button onclick="location.href='weatherweb.html'" class="back back1">
+                <img src="img/top/weatherweb.jpg" alt="髪型美人の天気予報の画像" />
+            </button>
+        </div>
+
+    </div>
+
+    <div class="main block2">
+
+        <div class="work content6 app">
+            <button onclick="location.href='dailymissions.html'" class="front category front1">
+                <p class="hirameki_ex">
+                    新しいことにチャレンジする<br>
+                    きっかけがほしい</p>
+            </button>
+            <button onclick="location.href='dailymissions.html'" class="back back1">
+                <img src="img/top/DailyMissions.jpg" alt="Daily Missionsの画像" />
+            </button>
+        </div>
+
+        <div class="work content7 app">
+            <button onclick="location.href='whatsin.html'" class="front category front1">
+                <p class="hirameki_ex">
+                    そのなかみを<br>
+                    シェアしたい
+                </p>
+            </button>
+            <button onclick="location.href='whatsin.html'" class="back back1">
+                <img src="img/top/Whatsin.jpg" alt="What's inの画像" />
+            </button>
+        </div>
+
+        <div class="work content8 product">
+            <button onclick="location.href='thechair.html'" class="front category front1">
+                <p class="hirameki_ex">
+                    座椅子=和室は<br>
+                    古いかも
+                </p>
+            </button>
+            <button onclick="location.href='thechair.html'" class="back back1">
+                <img src="img/top/TheChair.jpg" alt="The Chair の画像" />
+            </button>
+        </div>
+
+        <div class="work content9 web">
+            <button onclick="location.href='kininaruwebgallery.html'" class="front category front1">
+                <p class="hirameki_ex">
+                    一つ一つのサイトと<br>
+                    向き合うことで<br>
+                    デザインアイデアを得る
+                </p>
+            </button>
+            <button onclick="location.href='kininaruwebgallery.html'" class="back back1">
+                <img src="img/top/KininaruWebGallery.jpg" alt="キニナルWeb Galleryの画像" />
+            </button>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

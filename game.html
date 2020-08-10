@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" charset="utf-8">
+<html>
+
+<head>
+    <title>赤羽の街</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    -->
+    <script>
+        (function (d) {
+            var config = {
+                    kitId: 'tpu6uie',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="css/game.css">
+    <!--
+    <script type="text/javascript" src="../js/top.js"></script>
+    -->
+</head>
+
+<body>
+    <header>
+
+        <a class="home" href="index.html">Home</a>
+        <h1>赤羽の街～猫に導かれて～</h1>
+
+    </header>
+
+    
+
+
+    <img src="img/top/AkabaneNoMachi.jpg" alt="赤羽の街の画像" />
+
+    <div class="block1">
+
+        <div class="about">
+            <div class="tag_content">
+                ゲーム(enchant.js)
+            </div>
+            <div class="tag_content">
+                実装
+            </div>
+            <div class="tag_content">
+                制作期間：3週間
+            </div>
+            <div class="tag_content">
+                個人製作
+            </div>
+        </div>
+
+        <div class="tag">
+            <div class="icon">
+                <img src="img/icon/js.png" alt="jsのアイコン"/>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="content main">
+        <h2>About</h2>
+        <p>赤羽を舞台とするミニRPGゲームです。
+        </p>
+    </div>
+
+    <div class="content background">
+        <h2>Back Ground</h2>
+        <p>私の大学は赤羽にあります。<br>
+            赤羽の街には猫がたくさんいて、とても不思議な町です。<br>
+            そんな街と猫をテーマにした<br class="min">
+            ゲームがあったらと思い制作しました。
+        </p>
+    </div>
+
+
+    <div class="content howtoplay">
+        <h2>How to play</h2>
+        <p>操作方法：キーボード<br>
+        </p>
+        <div class="gif">
+            <img src="img/AkabaneNoMachi/1.png" alt="操作画面1" />
+            <img src="img/AkabaneNoMachi/2.png" alt="操作画面2" />
+            <img src="img/AkabaneNoMachi/3.png" alt="操作画面3" />
+        </div>
+    </div>
+
+
+    <footer></footer>
+
+</body>
+
+</html>

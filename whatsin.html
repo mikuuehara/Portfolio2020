@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" charset="utf-8">
+<html>
+
+<head>
+    <title>What's in...</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                    kitId: 'tpu6uie',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="css/whatsin.css">
+    <!--
+    <script type="text/javascript" src="../js/dailymissions.js"></script>
+    -->
+</head>
+
+<body>
+    <header>
+
+        <a class="home" href="index.html">Home</a>
+        <h1>What's in...?</h1>
+
+    </header>
+
+
+    <a class="url"
+        href="https://xd.adobe.com/view/5323fc6f-efb4-4141-8aae-873bed109f20-0670/screen/4bfc6943-8e9c-4098-aafd-21323f0c29cc"
+        target="_blank" rel="noopener">プロトタイプはこちら</a>
+
+    <img src="img/Whatsin/0.png" alt="Whats's in の画像" />
+
+    <div class="block1">
+
+        <div class="about">
+            <div class="tag_content">
+                APP
+            </div>
+            <div class="tag_content">
+                プロトタイプ
+            </div>
+            <div class="tag_content">
+                制作期間：3週間
+            </div>
+            <div class="tag_content">
+                個人製作
+            </div>
+        </div>
+
+        <div class="tag">
+            <div class="icon">
+                <img src="img/icon/illustrator.png" alt="イラストレーターのアイコン" />
+            </div>
+            <div class="icon">
+                <img src="img/icon/Xd.png" alt="xdのアイコン" />
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="content main">
+        <h2>About</h2>
+        <p>バッグの中身からスマホの中身まで<br class="min">
+            みんなのアイデア溢れる色々な"なかみ"をシェアする<br>
+            写真投稿SNSアプリケーションです。</p>
+    </div>
+
+    <div class="content background">
+        <h2>Back Ground</h2>
+        <p>子供のころ、友達と筆箱の中身を見せあったりしました。<br>
+            見る方も、見せるほうも、<span>わくわく</span>するのは何でだろう。<br>
+            <br>
+            大人になっても<span>なんだか気になるその"なかみ"</span>を<br class="min">
+            気軽にシェアできればいいなと思い、考案しました。
+        </p>
+
+        <div class="table">
+            <table>
+                <tr>
+                    <td>ターゲット</td>
+                    <td>10代~20代前半<br>
+                        自分のものにこだわりがある/<br class="min">
+                        おしゃれなもの、便利なものが好き</td>
+                </tr>
+                <tr>
+                    <td>利用シーン</td>
+                    <td>投稿<br>
+                        新しいものを買ったとき/<br class="min">
+                        季節の変わり目/<br class="min">
+                        環境が変わったとき<br>
+                        閲覧<br>
+                        新しいものを買いたいとき/<br class="min">
+                        暇なとき
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <div class="content frontend">
+        <h2>Points</h2>
+        <div class="point first">
+            <div class="exp">
+                投稿時にアイテムの商品URLを設定することで<br>
+                <span>気になったアイテムはすぐ購入</span>
+            </div>
+            <img src="img/Whatsin/1.JPG" alt="画面の画像" />
+        </div>
+
+        <div class="point second">
+            <img src="img/Whatsin/2.JPG" alt="画面の画像" />
+            <div class="exp">
+                <span>タグの検索</span>で<br>
+                似た趣味の人の持ち物を簡単に見つける<br>
+                <br>
+                なかみの、さらにそのなかみも<br>
+                投稿をリンクすることで簡単に飛ぶことができる
+            </div>
+        </div>
+        <p>ぜひ、プロトタイプをご覧ください。</p>
+    </div>
+
+    <a class="url" href="https://xd.adobe.com/view/5323fc6f-efb4-4141-8aae-873bed109f20-0670/screen/4bfc6943-8e9c-4098-aafd-21323f0c29cc" target="_blank"
+        rel="noopener">プロトタイプはこちら</a>
+
+
+    <footer></footer>
+
+</body>
+
+</html>

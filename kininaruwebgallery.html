@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>キニナル？？WEB GALLERY</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                    kitId: 'tpu6uie',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="css/kininaruwebgallery.css">
+    <!--
+    <script type="text/javascript" src="../js/top.js"></script>
+    -->
+</head>
+
+<body>
+    <header>
+        <a class="home" href="index.html">HOME</a>
+        <h1>キニナル?? WEB GALLERY</h1>
+    </header>
+
+    <a class="url" href="https://kininaru-web-gallery.herokuapp.com/" target="_blank" rel="noopener">サイトはこちら</a>
+
+    <img src="img/KininaruWebGallery/0.png">
+
+    <div class="block1">
+
+        <div class="about">
+            <div class="tag_content">
+                WEBアプリ
+            </div>
+            <div class="tag_content">
+                実装
+            </div>
+            <div class="tag_content">
+                制作期間：2週間
+            </div>
+            <div class="tag_content">
+                個人製作
+            </div>
+        </div>
+
+
+        <div class="tag">
+            <div class="icon">
+                <img src="img/icon/html.png" alt="htmlのアイコン"/>
+            </div>
+            <div class="icon">
+                <img src="img/icon/css.png" alt="cssのアイコン"/>
+            </div>
+            <div class="icon">
+                <img src="img/icon/js.png" alt="jsのアイコン"/>
+            </div>
+            <div class="icon">
+                <img src="img/icon/python.png" alt="pythonのアイコン"/>
+            </div>
+            <div class="icon">
+                <img src="img/icon/SQL.png" alt="SQLのアイコン"/>
+            </div>
+            <div class="icon">
+                <img src="img/icon/illustrator.png" alt="イラストレーターのアイコン"/>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="content main">
+
+        <h2>About</h2>
+        <p>キニナル?? WEB GALLERYはスマートフォン向けの<br class="min">
+            ウェブデザインギャラリーサイトです。</p>
+        <p>沢山のWebサイトのページをひとつひとつ見て<br>
+            キニナル or キニナラナイ で評価することで<br>
+            ユーザの興味を引くデザイン・アイデアを<br class="min">
+            見つけることができます。
+        </p>
+
+    </div>
+
+
+    <div class="content background">
+
+        <h2>Background</h2>
+        <p>「Webサイト制作に役立つスマホサイト/アプリを作る」<br>
+            という大学の課題で制作しました。</p>
+        <p>サイト制作者がスマホを利用するシーンを考え<br>
+            特定のテクニックを探すサイトではなく<br>
+            <span>沢山のものの中からアイデアを見つけて蓄える</span>ことを<br class="min">
+            目的としたサイトを考えました。
+        </p>
+    </div>
+
+    <div class="content ProductionFlow">
+
+        <h2>Production Flow</h2>
+        <img src="img/KininaruWebGallery/proflow.JPG" alt="制作の流れの画像"/>
+    </div>
+
+    <div class="content features">
+        <h2>Front-end Design</h2>
+        <p>既存のギャラリーサイトは、ページの羅列になっていて、つい流し見してしまいますが、<br>
+            ひとつひとつ評価することで<br class="min">
+            <span>それぞれのデザインと向き合う</span>ことができます。</p>
+        <p>細かなアニメーションを加えることで<br>
+            違和感のない操作感を演出し<br class="min">
+            <span>遊び心と快適さ</span>を両立させます。</p>
+    </div>
+
+    <div class="content backend">
+        <h2>Back-end Design</h2>
+        <p>ページ間のデータの受け渡し<br>
+            データベースを用いた動的なフォームの生成</p>
+        <img src="img/KininaruWebGallery/backend.JPG" alt="バックエンド設計の画像">
+    </div>
+
+
+    <a class="url" href="https://kininaru-web-gallery.herokuapp.com/" target="_blank" rel="noopener">サイトはこちら</a>
+
+
+    <footer></footer>
+
+</body>
+
+</html>

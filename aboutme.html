@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>自己紹介</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                    kitId: 'tpu6uie',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="css/aboutme.css">
+    <script type="text/javascript" src="js/aboutme.js"></script>
+
+</head>
+
+<body>
+    <header>
+
+        <a class="home" href="index.html">Home</a>
+        <h1>はじめまして
+            上原未紅です</h1>
+
+    </header>
+
+    <div class="popup html_exp">
+        <div class="mask"></div>
+        <div class="exp">
+            <div class="inline_exp">
+                <h3>HTML5</h3>
+                <p>大学1年生から勉強を始めました。<br>
+                    アクセシビリティを考慮したコーディングを意識しています。</p>
+            </div>
+            <button class="close" type="button">Close</button>
+        </div>
+    </div>
+
+    <div class="popup css_exp">
+        <div class="mask"></div>
+        <div class="exp">
+            <div class="inline_exp">
+                <h3>CSS3</h3>
+                <p>大学1年生から勉強を始めました。<br>
+                    html/cssだけでも様々な表現ができて<br class="min">
+                    とても面白いです。<br>
+                    現在はSVGを用いたアニメーションを勉強中です。</p>
+            </div>
+            <button class="close" type="button">Close</button>
+        </div>
+    </div>
+
+    <div class="popup js_exp">
+        <div class="mask"></div>
+        <div class="exp">
+            <div class="inline_exp">
+                <h3>javascript</h3>
+                <p>大学1年生から勉強を始めました。<br>
+                    主にjQueryを使用していますが、<br>
+                    他のライブラリやフレームワークについても<br>
+                    勉強したいと考えています。</p>
+            </div>
+            <button class="close" type="button">Close</button>
+        </div>
+    </div>
+
+    <div class="popup c_exp">
+        <div class="mask"></div>
+        <div class="exp">
+            <div class="inline_exp">
+                <h3>C言語</h3>
+                <p>大学2年生から勉強を始めました。<br>
+                    ポインタの理解に苦戦しました。</p>
+            </div>
+            <button class="close" type="button">Close</button>
+        </div>
+    </div>
+
+    <div class="popup ocaml_exp">
+        <div class="mask"></div>
+        <div class="exp">
+            <div class="inline_exp">
+                <h3>Ocaml</h3>
+                <p>大学3年生から勉強を始めました。<br>
+                    初めての関数型言語に苦戦しています。<br>
+                    らくだがかわいいですね。</p>
+            </div>
+            <button class="close" type="button">Close</button>
+        </div>
+    </div>
+
+    <div class="popup python_exp">
+        <div class="mask"></div>
+        <div class="exp">
+            <div class="inline_exp">
+                <h3>Python</h3>
+                <p>大学1年生から勉強を始めました。<br>
+                    初めて学んだプログラミング言語です。<br>
+                    Webアプリケーション開発の際にはDjangoを用いて行っています。</p>
+            </div>
+            <button class="close" type="button">Close</button>
+        </div>
+    </div>
+
+    <div class="popup xd_exp">
+        <div class="mask"></div>
+        <div class="exp">
+            <div class="inline_exp">
+                <h3>Adobe Xd</h3>
+                <p>プロトタイプ制作の際に使用しています。</p>
+            </div>
+            <button class="close" type="button">Close</button>
+        </div>
+    </div>
+
+
+    <div class="popup illu_exp">
+        <div class="mask"></div>
+        <div class="exp">
+            <div class="inline_exp">
+                <h3>Adobe Illustrator</h3>
+                <p>簡単なイラストを書くときに使用しています。<br>
+                    知れば知るほど奥が深いです。</p>
+            </div>
+            <button class="close" type="button">Close</button>
+        </div>
+    </div>
+
+    <div class="block1">
+        <p class="detail">ひらめいた自分/仲間のアイデアを<br class=min>
+            整えてカタチにする<br>
+            フロントエンドエンジニアを目指しています</p>
+    </div>
+
+    <div class="block2">
+
+        <div class="sm_only title1">
+            <p>
+                About
+            </p>
+        </div>
+
+        <div class="sm_only title2">
+            <p>
+                Skills
+            </p>
+        </div>
+
+        <div class="skills">
+            <button type="button" class="skil html"><img src="img/icon/html.png" alt="htmlのアイコン" /></button>
+            <button type="button" class="skil css"><img src="img/icon/css.png" alt="cssのアイコン" /></button>
+            <button type="button" class="skil js"><img src="img/icon/js.png" alt="jsのアイコン" /></button>
+            <button type="button" class="skil c"><img src="img/icon/C.png" alt="c言語のアイコン" /></button>
+            <button type="button" class="skil ocaml"><img src="img/icon/ocaml.png" alt="ocamlのアイコン" /></button>
+            <button type="button" class="skil python"><img src="img/icon/python.png" alt="pythonのアイコン" /></button>
+            <button type="button" class="skil xd"><img src="img/icon/Xd.png" alt="xdのアイコン" /></button>
+            <button type="button" class="skil illu"><img src="img/icon/illustrator.png" alt="イラストレーターのアイコン" /></button>
+        </div>
+
+        <div class="selfimg">
+            <img src="img/top/me.png" alt="上原未紅のイラスト">
+        </div>
+
+        <div class="about">
+            <div class="sentence">
+                <div class="border">
+                    <div class="title">学校</div>
+                    <div class="content">東洋大学 情報連携学部 情報連携学科 <br>
+                        エンジニアリングコース
+                    </div>
+                    <div class="title">いいところ</div>
+                    <div class="content">集中力がある<br>
+                        人の気持ちをじっくり考える
+                    </div>
+                    <div class="title">よくないところ</div>
+                    <div class="content">考えすぎてしまう
+                    </div>
+                    <div class="title">すきなこと</div>
+                    <div class="content">本を読むこと / 猫をながめること
+                    </div>
+                    <div class="title">E-mail / GitHub</div>
+                    <div class="content">s1f101801048@iniad.org<br>
+                        <a class="url" href="https://github.com/mikuuehara" target="_blank"
+                            rel="noopener">GitHubはこちら</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

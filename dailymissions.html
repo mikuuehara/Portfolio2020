@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" charset="utf-8">
+<html>
+
+<head>
+    <title>Daily Missions</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                    kitId: 'tpu6uie',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="css/dailymissions.css">
+    <!--
+    <script type="text/javascript" src="../js/dailymissions.js"></script>
+    -->
+</head>
+
+<body>
+    <header>
+
+        <a class="home" href="index.html">Home</a>
+        <h1>Daily Missions</h1>
+
+    </header>
+
+
+    <a class="url" href="https://xd.adobe.com/view/55bde9d8-ad69-4b64-4fa4-4aec0c3644ae-238c/" target="_blank" rel="noopener">プロトタイプはこちら</a>
+
+    <img src="img/DailyMissions/0.png" alt="DailyMissionsの画像" />
+
+    <div class="block1">
+
+        <div class="about">
+            <div class="tag_content">
+                APP
+            </div>
+            <div class="tag_content">
+                プロトタイプ
+            </div>
+            <div class="tag_content">
+                制作期間：3週間
+            </div>
+            <div class="tag_content">
+                個人製作
+            </div>
+        </div>
+
+        <div class="tag">
+            <div class="icon">
+                <img src="img/icon/illustrator.png" alt="イラストレーターのアイコン"/>
+            </div>
+            <div class="icon">
+                <img src="img/icon/Xd.png" alt="xdのアイコン"/>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="content main">
+        <h2>About</h2>
+        <p>アプリから提案されるミッションを<br class="min">
+            生活の中でクリアして<br>
+            自分だけの実績表を広げていくアプリケーションです。</p>
+    </div>
+
+    <div class="content background">
+        <h2>Back Ground</h2>
+        <p>大人になればなるほど、<br class="min">
+            ちょっとした新しい挑戦を<br class="min">
+            しなくなった気がしませんか？<br>
+            いつもは見ないジャンルの映画を観たり<br class="min">
+            普段とは違う道を通ったり<br>
+            そんなちょっとした<span>挑戦のきっかけを提供する</span>ために<br class="min">
+            考案しました。
+        </p>
+
+        <div class="table">
+            <table>
+                <tr>
+                    <td>ターゲット</td>
+                    <td>10代~20代<br>
+                        「面白いことないかな」<br class="min">
+                        と思いながら過ごしている</td>
+                </tr>
+                <tr>
+                    <td>シーン</td>
+                    <td>選択に迷ったとき<br>
+                        日々を豊かにする暇つぶし</td>
+                </tr>
+                <tr>
+                    <td>デザイン<br class="min">
+                        コンセプト</td>
+                    <td>わくわく</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <div class="content howto">
+
+        <h2>How to use</h2>
+        <img src="img/DailyMissions/howto1.JPG" alt="DailyMissionsの使用方法説明画像1"/>
+        <img src="img/DailyMissions/howto2.JPG" alt="DailyMissionsの使用方法説明画像2"/>
+
+    </div>
+
+    <div class="content frontend">
+        <h2>Design</h2>
+        <p>クリアの達成感や、実績表を広げていく<br class="min">
+            <span>わくわく感</span>を与えるアニメーション</p>
+        <p>ぜひ、プロトタイプをご覧ください。</p>
+    </div>
+
+    <a class="url" href="https://xd.adobe.com/view/55bde9d8-ad69-4b64-4fa4-4aec0c3644ae-238c/" target="_blank" rel="noopener">プロトタイプはこちら</a>
+
+
+    <footer></footer>
+
+</body>
+
+</html>
