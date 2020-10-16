@@ -6,7 +6,7 @@
     <title>What's in...</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
         (function (d) {
             var config = {
@@ -38,16 +38,14 @@
         })(document);
     </script>
 
-    <link rel="stylesheet" type="text/css" href="css/whatsin.css">
-    <!--
-    <script type="text/javascript" src="../js/dailymissions.js"></script>
-    -->
+    <link rel="stylesheet" type="text/css" href="css/works.css">
+    <script type="text/javascript" src="js/works.js"></script>
 </head>
 
 <body>
     <header>
 
-        <a class="home" href="index.html">Home</a>
+        <a class="home" href="index.html">TOP</a>
         <h1>What's in...?</h1>
 
     </header>
@@ -77,10 +75,10 @@
         </div>
 
         <div class="tag">
-            <div class="icon">
+            <div class="icon" id="ai">
                 <img src="img/icon/illustrator.png" alt="イラストレーターのアイコン" />
             </div>
-            <div class="icon">
+            <div class="icon" id="xd">
                 <img src="img/icon/Xd.png" alt="xdのアイコン" />
             </div>
         </div>
@@ -107,13 +105,13 @@
         <div class="table">
             <table>
                 <tr>
-                    <td>ターゲット</td>
+                    <th>ターゲット</th>
                     <td>10代~20代前半<br>
                         自分のものにこだわりがある/<br class="min">
                         おしゃれなもの、便利なものが好き</td>
                 </tr>
                 <tr>
-                    <td>利用シーン</td>
+                    <th>利用シーン</th>
                     <td>投稿<br>
                         新しいものを買ったとき/<br class="min">
                         季節の変わり目/<br class="min">
@@ -151,10 +149,11 @@
         <p>ぜひ、プロトタイプをご覧ください。</p>
     </div>
 
-    <a class="url" href="https://xd.adobe.com/view/5323fc6f-efb4-4141-8aae-873bed109f20-0670/screen/4bfc6943-8e9c-4098-aafd-21323f0c29cc" target="_blank"
-        rel="noopener">プロトタイプはこちら</a>
+    <a class="url"
+        href="https://xd.adobe.com/view/5323fc6f-efb4-4141-8aae-873bed109f20-0670/screen/4bfc6943-8e9c-4098-aafd-21323f0c29cc"
+        target="_blank" rel="noopener">プロトタイプはこちら</a>
 
-
+    <button id="jump_top"><img src="./img/top/arrow.png" alt="" /></button>
     <footer></footer>
 
 </body>

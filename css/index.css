@@ -1,5 +1,5 @@
 body {
-    margin: 0 0 5vh 0;
+    margin: 0 0 2vh 0;
     text-align: center;
     background-color: #E8E4E2;
     color: #44403e;
@@ -45,6 +45,10 @@ img {
     box-sizing: border-box;
     position: absolute;
     display: table;
+    grid-template-rows: 17vh;
+    grid-template-columns: 25vw;
+    justify-content: center;
+    align-content: center;
     bottom: 0;
     height: 100vh;
     width: 100%;
@@ -56,10 +60,13 @@ img {
 .inline_header {
     position: relative;
     display: table-cell;
+    align-self: center;
     vertical-align: middle;
     font-size: 1.2em;
     color: #44403e;
 }
+
+
 
 
 .inline_header span {
@@ -375,15 +382,19 @@ img {
 
 .me .front {
     background-color: #E8E4E2;
+    height: min-content;
 }
 
 .me .back {
     background-color: #E8E4E2;
+    height: min-content;
 }
 
 .me img {
     object-fit: contain;
+    width: 80%;
 }
+
 
 .block1 .work {
     margin: 2vh 1vh 0 1vh;
@@ -519,7 +530,7 @@ img {
 
 
 .block1 .content3 {
-    width: 30vh;
+    width: 55vh;
     height: 40vh;
 }
 
@@ -738,7 +749,6 @@ img {
     .block1 .content3 {
         order: 2;
         width: 30vh;
-        height: 45vh;
         margin: 1vh 0.5vh 0 0.5vh;
     }
 

@@ -22,6 +22,10 @@ a {
     top: 50%;
 }
 
+br{
+    line-height: initial;
+}
+
 img {
     width: 100%;
 }
@@ -83,7 +87,6 @@ button:hover {
 }
 
 .detail {
-    font-size: 1em;
     line-height: 2em;
 }
 
@@ -181,8 +184,11 @@ button:hover {
     background-color: #44403e;
     color: #FBFBFB;
     margin-top: 2em;
-    padding: 0.5em 0.5em;
+    padding: 0.2em 0.5em;
     border-radius: 0.5em;
+    font-family: dnp-shuei-mgothic-std, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .popup .mask {
@@ -198,7 +204,7 @@ button:hover {
 .selfimg {
     width: 27vw;
     height: 30vw;
-    margin: 2vh;
+    margin: 2vh 0;
 }
 
 .selfimg img {
@@ -217,7 +223,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     width: calc(30vw - 2em);
-    font-size: 0.8em;
     margin: 2vh auto;
     padding: 0.5em;
     border-radius: 1em;
@@ -226,35 +231,43 @@ button:hover {
 .border {
     border: solid 3px #E8E4E2;
     border-radius: 1em;
-    padding: 0.3em 1em 1em 1em;
+    padding: 0.3em 0.5em 1em 0.5em;
 }
 
 .sentence .title {
-    margin: 0.5em 0 0 1.5em;
+    margin: 0.5em 0 0 1em;
     text-align: start;
     font-size: 1.1em;
 }
 
-.url {
+.content{
+    font-size: 1em;
+    margin: 0;
+}
+
+#git {
     position: relative;
-    padding: 0.3em;
-    color: #44403e;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    border-radius: 4px;
+    color: #FBFBFB;
+    background-color: #575aec;
     text-decoration: none;
 }
 
-.url::after {
+#git::after {
     position: absolute;
     bottom: 0;
     left: 50%;
     content: '';
     width: 0;
     height: 2px;
-    background-color: #44403e;
+    background-color: #FBFBFB;
     transition: .3s;
     transform: translateX(-50%);
 }
 
-.url:hover::after {
+#git:hover::after {
     width: 100%;
 }
 

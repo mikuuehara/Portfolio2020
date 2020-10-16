@@ -45,10 +45,10 @@ $(function () {
         // スクロールされたらアナウンスを消す
         $('.scroll').fadeOut(300);
 
-        // 高さが画面の15%になったら高さを固定
-        if (new_header_h <= (win_h * 0.17)) {
+        // 高さが画面の20%になったら高さを固定
+        if (new_header_h <= (win_h * 0.20)) {
             $('.header').css({
-                height: (win_h * 0.17),
+                height: (win_h * 0.20),
                 position: 'fixed',
                 top: 0
             });

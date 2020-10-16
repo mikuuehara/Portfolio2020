@@ -6,7 +6,7 @@
     <title>Daily Missions</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
         (function (d) {
             var config = {
@@ -38,22 +38,21 @@
         })(document);
     </script>
 
-    <link rel="stylesheet" type="text/css" href="css/dailymissions.css">
-    <!--
-    <script type="text/javascript" src="../js/dailymissions.js"></script>
-    -->
+    <link rel="stylesheet" type="text/css" href="css/works.css">
+    <script type="text/javascript" src="js/works.js"></script>
 </head>
 
 <body>
     <header>
 
-        <a class="home" href="index.html">Home</a>
+        <a class="home" href="index.html">TOP</a>
         <h1>Daily Missions</h1>
 
     </header>
 
 
-    <a class="url" href="https://xd.adobe.com/view/55bde9d8-ad69-4b64-4fa4-4aec0c3644ae-238c/" target="_blank" rel="noopener">プロトタイプはこちら</a>
+    <a class="url" href="https://xd.adobe.com/view/55bde9d8-ad69-4b64-4fa4-4aec0c3644ae-238c/" target="_blank"
+        rel="noopener">プロトタイプはこちら</a>
 
     <img src="img/DailyMissions/0.png" alt="DailyMissionsの画像" />
 
@@ -75,11 +74,11 @@
         </div>
 
         <div class="tag">
-            <div class="icon">
-                <img src="img/icon/illustrator.png" alt="イラストレーターのアイコン"/>
+            <div class="icon" id="ai">
+                <img src="img/icon/illustrator.png" alt="イラストレーターのアイコン" />
             </div>
-            <div class="icon">
-                <img src="img/icon/Xd.png" alt="xdのアイコン"/>
+            <div class="icon" id="xd">
+                <img src="img/icon/Xd.png" alt="xdのアイコン" />
             </div>
         </div>
 
@@ -107,19 +106,19 @@
         <div class="table">
             <table>
                 <tr>
-                    <td>ターゲット</td>
+                    <th>ターゲット</th>
                     <td>10代~20代<br>
                         「面白いことないかな」<br class="min">
                         と思いながら過ごしている</td>
                 </tr>
                 <tr>
-                    <td>シーン</td>
+                    <th>シーン</th>
                     <td>選択に迷ったとき<br>
                         日々を豊かにする暇つぶし</td>
                 </tr>
                 <tr>
-                    <td>デザイン<br class="min">
-                        コンセプト</td>
+                    <th>デザイン<br class="min">
+                        コンセプト</th>
                     <td>わくわく</td>
                 </tr>
 
@@ -130,8 +129,8 @@
     <div class="content howto">
 
         <h2>How to use</h2>
-        <img src="img/DailyMissions/howto1.JPG" alt="DailyMissionsの使用方法説明画像1"/>
-        <img src="img/DailyMissions/howto2.JPG" alt="DailyMissionsの使用方法説明画像2"/>
+        <img src="img/DailyMissions/howto1.JPG" alt="DailyMissionsの使用方法説明画像1" />
+        <img src="img/DailyMissions/howto2.JPG" alt="DailyMissionsの使用方法説明画像2" />
 
     </div>
 
@@ -142,9 +141,10 @@
         <p>ぜひ、プロトタイプをご覧ください。</p>
     </div>
 
-    <a class="url" href="https://xd.adobe.com/view/55bde9d8-ad69-4b64-4fa4-4aec0c3644ae-238c/" target="_blank" rel="noopener">プロトタイプはこちら</a>
+    <a class="url" href="https://xd.adobe.com/view/55bde9d8-ad69-4b64-4fa4-4aec0c3644ae-238c/" target="_blank"
+        rel="noopener">プロトタイプはこちら</a>
 
-
+    <button id="jump_top"><img src="./img/top/arrow.png" alt="" /></button>
     <footer></footer>
 
 </body>

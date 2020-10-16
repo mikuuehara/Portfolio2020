@@ -5,7 +5,7 @@
     <title>キニナル？？WEB GALLERY</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
         (function (d) {
             var config = {
@@ -37,19 +37,18 @@
         })(document);
     </script>
 
-    <link rel="stylesheet" type="text/css" href="css/kininaruwebgallery.css">
-    <!--
-    <script type="text/javascript" src="../js/top.js"></script>
-    -->
+    <link rel="stylesheet" type="text/css" href="css/works.css">
+    <script type="text/javascript" src="js/works.js"></script>
 </head>
 
 <body>
     <header>
-        <a class="home" href="index.html">HOME</a>
+        <a class="home" href="index.html">TOP</a>
         <h1>キニナル?? WEB GALLERY</h1>
     </header>
 
     <a class="url" href="https://kininaru-web-gallery.herokuapp.com/" target="_blank" rel="noopener">サイトはこちら</a>
+    <a class="git" href="https://github.com/mikuuehara/KininaruWebGallery" target="_blank" rel="noopener">コードはこちら</a>
 
     <img src="img/KininaruWebGallery/0.png">
 
@@ -72,22 +71,22 @@
 
 
         <div class="tag">
-            <div class="icon">
+            <div class="icon" id="html">
                 <img src="img/icon/html.png" alt="htmlのアイコン"/>
             </div>
-            <div class="icon">
+            <div class="icon" id="css">
                 <img src="img/icon/css.png" alt="cssのアイコン"/>
             </div>
-            <div class="icon">
+            <div class="icon" id="js">
                 <img src="img/icon/js.png" alt="jsのアイコン"/>
             </div>
-            <div class="icon">
+            <div class="icon" id="python">
                 <img src="img/icon/python.png" alt="pythonのアイコン"/>
             </div>
-            <div class="icon">
+            <div class="icon" id="sql">
                 <img src="img/icon/SQL.png" alt="SQLのアイコン"/>
             </div>
-            <div class="icon">
+            <div class="icon" id="ai">
                 <img src="img/icon/illustrator.png" alt="イラストレーターのアイコン"/>
             </div>
         </div>
@@ -146,8 +145,9 @@
 
 
     <a class="url" href="https://kininaru-web-gallery.herokuapp.com/" target="_blank" rel="noopener">サイトはこちら</a>
+    <a class="git" href="https://github.com/mikuuehara/KininaruWebGallery" target="_blank" rel="noopener">コードはこちら</a>
 
-
+    <button id="jump_top"><img src="./img/top/arrow.png" alt="" /></button>
     <footer></footer>
 
 </body>

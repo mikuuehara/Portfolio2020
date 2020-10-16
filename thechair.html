@@ -6,7 +6,7 @@
     <title>The Chair</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
         (function (d) {
             var config = {
@@ -38,16 +38,14 @@
         })(document);
     </script>
 
-    <link rel="stylesheet" type="text/css" href="css/thechair.css">
-    <!--
-    <script type="text/javascript" src="../js/top.js"></script>
-    -->
+    <link rel="stylesheet" type="text/css" href="css/works.css">
+    <script type="text/javascript" src="js/works.js"></script>
 </head>
 
 <body>
     <header>
 
-        <a class="home" href="index.html">Home</a>
+        <a class="home" href="index.html">TOP</a>
         <h1>The Chair</h1>
 
     </header>
@@ -71,7 +69,7 @@
         </div>
 
         <div class="tag">
-            <div class="icon">
+            <div class="icon" id="fusion">
                 <img src="img/icon/Fusion.png" alt="Fusion360のアイコン" />
             </div>
         </div>
@@ -96,46 +94,45 @@
         <div class="table">
             <table>
                 <tr>
-                    <td>ターゲット</td>
+                    <th>ターゲット</th>
                     <td>20代～30代前半女性<br>
                         インテリアと実用性の<br class="min">
                         両立をもとめる</td>
                 </tr>
                 <tr>
-                    <td>シーン</td>
+                    <th>シーン</th>
                     <td>食事・テレビを見るときなど<br class="min">
                         日常生活</td>
                 </tr>
                 <tr>
-                    <td>素材の特徴</td>
+                    <th>素材の特徴</th>
                     <td>さらさらとした触り心地で<br class="min">
                         1年中使用可能<br>
                         白色の木材で優しい風合い</td>
                 </tr>
             </table>
         </div>
-        <img src="img/TheChair/1.png" alt="使用素材の画像" />
+        <img class="small_img" src="img/TheChair/1.png" alt="使用素材の画像" />
         <div class="table">
             <table>
-
                 <tr>
-                    <td>構造の特徴</td>
+                    <th>構造の特徴</th>
                     <td>ラチェット構造により<br class="min">
                         リクライニングが可能</td>
                 </tr>
             </table>
         </div>
-        <img src="img/TheChair/2.png" alt="リクライニングの画像" />
+        <img class="small_img" src="img/TheChair/2.png" alt="リクライニングの画像" />
     </div>
 
     <div class="content colval">
 
         <h2>Color variations</h2>
-        <img src="img/TheChair/3.png" alt="カラーバリエーションの画像">
+        <img class="small_img" src="img/TheChair/3.png" alt="カラーバリエーションの画像">
 
     </div>
 
-
+    <button id="jump_top"><img src="./img/top/arrow.png" alt="" /></button>
     <footer></footer>
 
 </body>
